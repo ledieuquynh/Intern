@@ -22,12 +22,16 @@
 
     }
  }
- @media (max-width: 575.98px) and (orientation: portrait){
-    .page-auth{
-        height: 100%;
-        overflow: scroll;
-    }
+ * {
+    box-sizing: border-box;
  }
+@media screen (max-width: 300px){
+    .login-page .page-auth .background_img {
+        width: 25%;
+        float: left;
+    
+    }
+}
 
 html {
     font-size: 62.5%;
