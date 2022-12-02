@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill-Repo</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body class="login-page">
+    <div class="page-auth">
+        <div class="background_img">
+            <img src="https://skill-repo.jp/assets_new/img/cover-login-page.png?id=a62b38c8e86e90928857" alt>
+        </div>
+        <!-- <div class="black-background">&nbsp;</div> -->
+        <div>
+            <div class="login-content">
+                <div class="main_title">
+                    <span class="title u-display-block text text-4xl">Skill-Repo</span><br>
+                    <span class="desc u-display-block text">クラウド型スキルシート管理webシステム</span>
+                </div>
+                <div class="card login-box">
+                    <form action="" method="post">
+                        <input type="hidden" name="_token" value="">
+                        <div class="form-group" data-info="">
+                            <label class="form_label u-text-align-left" for="email">メールアドレス</label>
+                            <input autocomplete="off" class="form_input" type="email" placeholder="メールアドレス" id="email" name="email" error_key="email" data="error-email">
+                            <!-- <p class="validation-error" name="email">
+                                メールアドレスは、必ず指定してください。
+                            </p> -->
+                        </div>
+
+                        <div class="form-group" data-info="">
+                            <label class="form_label u-text-align-left" for="password">パスワード</label>
+                            <input autocomplete="off" class="form_input" type="password" placeholder="パスワード" id="password" name="password" error_key="password" data="error-password">
+                            <!-- <p class="validation-error" name="password">
+                                パスワードは、必ず指定してください。
+                            </p> -->
+                        </div>
+                        <button  class="login_button">
+                            ログイン
+                        </button>
+                    </form>
+                    <a class="link u-display-block-text" href="">パスワードをお忘れの方</a><br>
+                    <a class="link u-display-block-text" href="">アカウントの新規登録</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!--  <button class="btn --block u-with-100-percent" type="submit"> -->

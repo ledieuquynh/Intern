@@ -1,0 +1,43 @@
+@media screen (max-width: 400px){
+    .grid-container {
+        
+    }
+}
+
+.body-style {
+    margin: 50px;
+    background-size: auto;
+    background-image: 
+        url(https://eneax.github.io/learn-css-grid/assets/images/topography.svg),
+        linear-gradient(110deg, #f93d66, #6d47d9);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* background-color: blueviolet; */
+    grid-gap: 20px;
+    /* width: 100%; */
+    padding: 20px;
+    grid-template-columns: 100px auto 200px;
+    grid-template-rows: 200px 100px 400px;
+    letter-spacing: -1px;
+    /* background-attachment: fixed; */
+   
+
+}
+.grid-items {
+    display: grid;
+    background-color: #ffc600;
+    border: 5px solid rgba(0, 0, 0, 0.03);
+    padding: 20px;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-family: 'Lalezar', cursive;
+    font-family: 'Noto Sans JP', sans-serif;
+    /* color: var(black); */
+    text-shadow: 0 2px 0 rgb(0 0 0 / 7%);
+}
