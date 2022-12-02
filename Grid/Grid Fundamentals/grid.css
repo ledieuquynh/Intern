@@ -1,7 +1,4 @@
 @media screen (max-width: 400px){
-    .grid-container {
-        
-    }
 }
 
 .body-style {
@@ -10,7 +7,12 @@
     background-image: 
         url(https://eneax.github.io/learn-css-grid/assets/images/topography.svg),
         linear-gradient(110deg, #f93d66, #6d47d9);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
