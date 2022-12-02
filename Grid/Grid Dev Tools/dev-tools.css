@@ -1,0 +1,29 @@
+.page-style {
+    background-image: url(https://eneax.github.io/learn-css-grid/assets/images/topography.svg), linear-gradient(110deg, #f93d66, #6d47d9);
+    background-size: 340px, auto;
+    min-height: calc(100vh - 100px);
+    margin: 50px;
+    letter-spacing: -1px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 2px 0 rgb(0 0 0 / 7%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px 200px;
+    grid-gap: 20px;
+    justify-content: start;
+}
+
+.item {
+    display: grid;
+    background-color: #ffc600;
+    border-radius: 4px;
+    border: 5px solid rgba(0, 0, 0, 0.03);
+    height: 57px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
