@@ -7,11 +7,14 @@
 .page-style {
     background-image: url(https://eneax.github.io/learn-css-grid/assets/images/topography.svg), 
     linear-gradient(110deg, #f93d66, #6d47d9);
-    background-size: 340px, auto;
+    /* background-size: 340px, auto; */
     font-weight: 900;
     font-family: Arial, Helvetica, sans-serif;
     margin: 50px;
-
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .container {
     display: grid;
