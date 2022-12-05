@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&display=swap'); 
+@media screen (max-width: 400px){
+    .grid-container {
+        width: 25%;
+        float: left;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+.page-style {
+    width: fit-content;
+    font-family: ;
+}
+.home-page {}
+h1 {
+    font-size: 50px;
+}
+.header {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 30px;
+}
+.nav-bar {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: rgb(231, 230, 229);
+    width: fit-content; 
+    padding: 15px;   
+    border-radius: 80px;
+}
+.nav-items {
+    color: black;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+    color: grey;
+}
+
+.grid-frame {
+    margin: 10px;
+}
+.grid-container {
+    display: grid;
+    /* background-color: rgb(231, 230, 227); */
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    
+}
+.grid-items{
+    display: grid;
+    /* background-color: orange; */
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    /* border: 1px solid grey; */
+}
+/* .item1 {
+    grid-column: 1/ span 2;
+    grid-row-start: 1;
+} */
