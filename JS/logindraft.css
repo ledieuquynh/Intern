@@ -1,0 +1,12 @@
+.login-form button:hover{
+    background: #151c6a;
+}
+.login-form #email-error,
+.login-form #pass-error{
+    margin-top: 5px;
+    width: 345px;
+    font-size: 18px;
+    color: #c62828;
+    /* text-align: center; */
+    display: none;
+}

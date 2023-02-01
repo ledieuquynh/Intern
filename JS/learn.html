@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="learn.css">
+
+    <link rel="icon" type="image/x-icon" href="https://www.clipartmax.com/png/middle/95-951904_free-vector-graphic-coffee-cup-icon-black.png">
+
+</head>
+<body>
+    
+    <h1 class="heading" id="heading" style="font-family: monospace;">Coffee</h1>
+
+    <div>
+        <h4 style="font-family: monospace;">
+            Hiii, I wanna order a cup of coffee.
+            <i class="bi bi-cup-hot-fill"></i>
+        </h4>
+        
+
+        <form action="" name="myForm" onsubmit="return validateForm()" method="post">
+            Order: <input type="pulldown" name="fname">
+            <input type="submit" value="Submit">
+        </form>
+        <p>Brown coffee</p>
+        <br>
+
+        <div class="grid-container">
+            <nav>
+                <i class="bi bi-cup grid-item"></i>
+                <i class="bi bi-cup-fill grid-item"></i>
+                <i class="bi bi-cup-hot grid-item"></i>
+                <i class="bi bi-cup-hot-fill grid-item"></i>
+                <i class="bi bi-cup-straw grid-item"></i>
+            </nav>
+        </div>
+
+        <div class="box">
+            <h2 class="heading-2">Heading2</h2>
+        </div>
+
+        <!-- Login -->
+        <div>
+            <form action="" method="post" class="form" id="form-1">
+                <h2>Login</h2>
+                <div class="spacer"></div>
+    
+                <div class="login">
+                
+    
+                    <div class="form-group">
+                        <label for="fullname" class="form-label">Full name</label><br>
+                        <input  type="text" id="fullname" name="fullname" class="form-input" placeholder="Le Dieu Quynh"><br>
+                        <span class="form-message"></span>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label><br>
+                        <input type="text" id="email" name="email" class="form-input" placeholder="meomeo1@edu.vn"><br>
+                        <span class="form-message"></span>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="password">Password</label><br>
+                        <input type="password" id="password" name="password" class="form-input"><br>
+                        <span class="form-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password confirmation</label><br>
+                        <input type="password" id="password-confirmation" name="password-confirmation" class="form-input"><br>
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="btn">
+                        <button class="form-submit">Login</button>
+                    </div>
+        
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src="learn.js"></script>
+    <script> 
+
+        // Mong muon
+        Validator({
+            form: '#form-1',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#fullname', 'Please input your full name'),
+                Validator.isEmail('#email'),
+                Validator.minLength('#password', 8),
+                Validator.isRequired('#password-confirmation'),
+                Validator.isConfirmed('#password-confirmation', function() {
+                    return document.querySelector('#form-1 #password').value;
+                }, 'Password confirmation is not correct')
+
+            ]
+        });
+
+    </script>
+
+</body>
+</html>
+<!-- Please input -->

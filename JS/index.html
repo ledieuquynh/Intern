@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="logindraft.css">
+  <title>I learn JavaScript</title>
+  
+</head>
+
+<body>
+  <h1>Hello meow meow</h1>  
+
+  <span id="content"></span>
+  <p id="sub"></p>
+
+  <h3 class="customer-number" id="x"></h3>
+
+  <form>
+    <input type="button" id="btn01" value="OK">
+  </form>
+
+    <input type="text" onfocus="handleOnFocus(this)" onblur="handleOnBlur(this)"/>
+    <!-- <button id="btn01" onclick="console.log(myFunction())">Click me</button> -->
+    <script src="index.js"></script>
+    <br>
+    <button onclick="disableElement()">Disable</button>
+    <button onclick="myFunction">Click me</button>
+
+  <div class="container">
+    <h1 class="label">Login</h1>
+    <form action="home.html" class="login-form " method="post" name="form" onsubmit="return validated()">
+      <label class="font" for="email">Email or Phone number</label><br>
+      <input type="text" id="email" name="email"><br>
+      <div id="email-error">Please fill up your email</div><br>
+
+      <label for="password">Password</label><br>
+      <input type="password" id="password" name="password">
+      <div id="pass-error">Please fill up your password</div><br>
+      <br>
+
+      <button type="submit">Login</button>
+    </form>
+    <script src="index.js"></script>
+  </div>
+  
+
+</body>
+<!-- <script type="text/javascript">
+  document.getElementById("content").innerHTML = "Học JavaScript cùng Meow Meow"
+</script> -->
+
+
+
+</html>
