@@ -19,6 +19,8 @@
     </style> -->
 </head>
 <body>
+    <script src="./Validator.js"></script>
+
     <div class="login-page">
         <div class="page-auth">
             <div class="background_img">
@@ -36,15 +38,15 @@
                 </div>
                 <div class="login_box">
                     <form action="" method="post">
-                        <div class="form_group">
+                        <div class="form_group" >
                             <label class="form_label" for="email">メールアドレス</label>
                             <input class="form_input" type="text" id="email" name="email" placeholder="メールアドレス" ><br>
-                        
+                            <!-- <span class="form-message">メールを入力してください。</span> -->
                         </div>
                         <div class="form_group">
                             <label class="form_label" for="email">パスワード</label>
                             <input class="form_input" type="password" id="password" name="password" placeholder="パスワード" >
-                            
+                            <p id="messageErrorPassword" style="color: red; margin-top: 0px; margin-bottom: 0.6rem; font-size: 0.8rem;"></p>
                         </div>
                         <div class="form_group">
                             <button class="button" id="button" type="submit">ログイン</button>

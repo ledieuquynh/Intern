@@ -1,0 +1,29 @@
+
+.main-page-style {
+    margin-top: 50px;
+}
+.h-center {
+    text-align: center!important;
+}
+
+.nav-padding {
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+}
+.nav-bar {
+    background-color: rgb(253, 227, 189);
+    width: auto;
+    padding: 15px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.items {
+    padding: 10px;
+}
+h1 h2 {
+    margin: 10px;
+}

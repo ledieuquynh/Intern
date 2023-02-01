@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="login.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <style>
+        .div-col-a {
+            height: 30px;
+            width: 30px;
+            background-color: rgb(214, 130, 130);
+        }
+
+        .div-col-b {
+        
+            height: 30px;
+            width: 30px;
+            background-color: rgb(136, 174, 231);
+        }
+
+        .div-col-c {
+            height: 30px;
+            width: 30px;
+            background-color: rgb(152, 240, 152);
+        }
+
+        .div-col-d {
+            height: 30px;
+            width: 30px;
+            background-color: rgb(241, 171, 241);
+        }
+    </style>
+    <div class="">
+        <!-- <div>
+            <h1>Login</h1>
+        </div>
+
+        <div>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div> -->
+        <div class="row">
+            <div class="col-md-3 div-col-a">a</div>
+            <div class="col-md-6 div-col-b">b</div>
+            <div class="col-md-3 div-col-c">c</div>
+            <!-- <div class="col-md-3 div-col-d">d</div> -->
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 div-col-a">a</div>
+            <div class="col-md-6 div-col-b">b</div>
+            <div class="col-md-3 div-col-c">c</div>
+            <div class="col-md-3 div-col-d">d</div>
+        </div>
+    </div>
+    
+    <div class="body-text">
+        <h2>Time</h2>
+        <p>display the time</p>
+
+        <button onclick="displayDate()">今何時？</button>
+        <script>
+            function displayDate() {
+                document.getElementById("demo").innerHTML = Date();
+            }
+        </script>
+        <p id="demo"></p>
+    </div>
+  </body>
+</html>
